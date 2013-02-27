@@ -19,11 +19,15 @@ INCLUDE_DIRECTORIES("/usr/include/ooml")
  
 #Set a variable with the name of the cpp source files of your application
 SET(TOPEFEE_FILES topefee.cpp)
+SET(RUEDAMOTOR_FILES ruedamotor.cpp)
 
 #Set a variable with the name of your application
 SET(TOPEFEE_NAME topefee)
- 
+ SET(RUEDAMOTOR_NAME ruedamotor	)
+
 #Create and link the executable
 ADD_EXECUTABLE(${TOPEFEE_NAME} ${TOPEFEE_FILES})
+ADD_EXECUTABLE(${RUEDAMOTOR_NAME} ${RUEDAMOTOR_FILES})
 
 TARGET_LINK_LIBRARIES(${TOPEFEE_NAME} OOMLCore OOMLComponents OOMLParts)
+TARGET_LINK_LIBRARIES(${RUEDAMOTOR_NAME} OOMLCore OOMLComponents OOMLParts)
