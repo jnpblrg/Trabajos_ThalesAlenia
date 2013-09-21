@@ -32,15 +32,15 @@ int main()
             + Cube(ancho, alto, grosor_max*2).translate(0,0,grosor_max*2) //cuerpo
             - RoundedTablet(ancho-10, alto-10, grosor_max*2+1,5).translate(0,0,grosor_max*2) //cuerpo
             + Cube(5,alto,grosor_max*2+ancho_electronica).translate(largo_electronica/2-2.5+5,0,grosor_max*2+ancho_electronica/2) //soporte exterior derecho
-            + Cube(5,alto,grosor_max*2).translate(largo_electronica/4-2.5,0,grosor_max*2)
+            + Cube(5,alto,grosor_max*2).translate(largo_electronica/4-2.5,0,grosor_max*2-0.1)
             + Cube(5,alto,grosor_max*2+ancho_electronica).translate(-(largo_electronica/2-2.5+5),0,grosor_max*2+ancho_electronica/2) //soporte exterior izdo
-            + Cube(5,alto,grosor_max*2).translate(-(largo_electronica/4-2.5),0,grosor_max*2)
+            + Cube(5,alto,grosor_max*2).translate(-(largo_electronica/4-2.5),0,grosor_max*2-0.1)
             + Cube(largo_electronica,5,ancho_electronica).translate(0,-(alto/2-2.5),ancho_electronica/2+grosor_max*3) //soporte pcb
             - Cube(largo_electronica-20,6,ancho_electronica-10).translate(0,-(alto/2-2.5),ancho_electronica/2+grosor_max*3+5.1)
             + Cube ((ancho-largo_electronica)/2,5,grosor_max*2).translate((ancho-largo_electronica)/4+largo_electronica/2,0,2*grosor_max)
-            + Cube ((ancho-largo_electronica)/2,5,grosor_max*2).translate(40,0,2*grosor_max)
+            + Cube ((ancho-largo_electronica)/2,5,grosor_max*2).translate(40,0,2*grosor_max-0.1)
             + Cube ((ancho-largo_electronica)/2,5,grosor_max*2).translate(-((ancho-largo_electronica)/4+largo_electronica/2),0,2*grosor_max)
-            + Cube ((ancho-largo_electronica)/2,5,grosor_max*2).translate(-40,0,2*grosor_max)
+            + Cube ((ancho-largo_electronica)/2,5,grosor_max*2).translate(-40,0,2*grosor_max-0.1)
             - Cube (largo_electronica+11,alto*2,alto*2).rotate(45,0,0).translate(0,45,70)
 
             ;
